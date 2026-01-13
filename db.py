@@ -19,7 +19,7 @@ class Users(Base):
 
     id: Mapped[int] = mapped_column(primary_key=True)
     username: Mapped[str] = mapped_column(String(50))
-    email: Mapped[str] = mapped_column(String(200), unique=True)
+    email: Mapped[str] = mapped_column(String(200))
     password: Mapped[str | None] = mapped_column()
 
 
